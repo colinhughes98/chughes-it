@@ -21,11 +21,16 @@ namespace chughesit
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/vendor/bootstrap/js bootstrap.min.js",
+                      "~/js/jqBootstrapValidation.js",
+                      "~/js/contact_me.js",
+                      "~/js/freelancer.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/vendor/bootstrap/css/bootstrap.min.css",
+                      "~/css/agency.min.css",
+                      "~/vendor/font-awesome/css/font-awesome.min.css"));
         }
     }
 }
