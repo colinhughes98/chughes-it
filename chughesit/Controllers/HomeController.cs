@@ -13,18 +13,28 @@ namespace chughesit.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
+
+
+        [HttpPost]
+        public ActionResult Contact(ContactViewModel contact)
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+    }
+
+    public class ContactViewModel
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Message { get; set; }
     }
 }
