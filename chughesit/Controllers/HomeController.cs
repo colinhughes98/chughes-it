@@ -17,7 +17,11 @@ namespace chughesit.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
 	    var c1 ="edited via local pc";
+
+            var c = "edited via github";
+
 
             return View();
         }
